@@ -1,0 +1,5 @@
+<div *ngFor="let joke of jokearray">
+    <h4>{{joke.punchline}}</h4>
+    <p [hidden]="joke.hidden">{{joke.resp}}</p>
+    <button (click)="joke.toogle()">Tell me</button>
+</div>
